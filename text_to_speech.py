@@ -8,7 +8,7 @@ from pydub import AudioSegment
 
 
 def text_to_speech_with_elevenlabs(input_text, output_filepath):
-    client=ElevenLabs(api_key="sk_3ab5fa4fa08d002c7c6f5707a92c99f48d8e223f7f719fd5")
+    client=ElevenLabs(api_key="api_key")
     audio=client.text_to_speech.convert(
         text= input_text,
         voice_id="ZF6FPAbjXT4488VcRRnw", #"JBFqnCBsd6RMkjVDRZzb",
